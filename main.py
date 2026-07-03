@@ -1,5 +1,6 @@
 # main: greets user, calls play() to start game
 def main():
+    # TODO : NEEDS TO BE DONE
     pass
 
 
@@ -61,6 +62,7 @@ def play():
 # a way: create a list and use random.choice() ?
 # should return the word
 def chooseWord():
+    # TODO: NEEDS TO BE DONE
     pass
 
 # guessLetter: validates input and check if the letter guessed is valid; if so, 
@@ -71,12 +73,14 @@ def chooseWord():
 # returns True if correct, False otherwise
 
 def guessLetter(guess, word, progress, used):
+    # TODO: NEEDS TO BE DONE
     pass
 
 
 # displayUsedLetters: displays the letters used in the correct format as per the project 1 PDF
 # bonus function
 def displayUsedLetters(used):
+    # TODO: NEEDS TO BE DONE
     pass
 
 if __name__ == "__main__":
