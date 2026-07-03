@@ -56,7 +56,7 @@ def play():
 
 
 
-# chooseWord: chooses the word. 
+# chooseWord: chooses the word. - must be lower case and not have whitespace
 # a way: create a list and use random.choice() ?
 # should return the word
 def chooseWord():
