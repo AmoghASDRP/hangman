@@ -2,6 +2,7 @@
 def main():
     pass
 
+
 # play: the actual game functionality. uses chooseWord(), 
 # guessLetter(), and guessWord() to play the game; also keeps track of lives
 # must also be recursive
