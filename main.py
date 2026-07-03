@@ -5,12 +5,19 @@ def main():
 # play: the actual game functionality. uses chooseWord(), 
 # guessLetter(), and guessWord() to play the game; also keeps track of lives
 # must also be recursive
+# Amogh is doing this one
 def play():
     lives = 6
+    word = chooseWord()
+    word_list = []
+    progress = []
+    
+
+
 
 # chooseWord: chooses the word. 
-# one way to do this is here: https://pypi.org/project/random_word ? 
-# another way: create a list and use random.choice() ?
+# a way: create a list and use random.choice() ?
+# should return the word
 def chooseWord():
     pass
 
