@@ -80,8 +80,13 @@ def guessLetter(guess, word, progress, used):
 # displayUsedLetters: displays the letters used in the correct format as per the project 1 PDF
 # bonus function
 def displayUsedLetters(used):
-    # TODO: NEEDS TO BE DONE
-    pass
+    if not used:
+        print("Used letters: None")
+    else:
+        # letters will be sorted in alphabetical order
+        letters_sort = sorted(list(used))
+        print("Used letters:",", ".join(letters_sort))
+
 
 if __name__ == "__main__":
     main()
