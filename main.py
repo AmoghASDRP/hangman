@@ -61,9 +61,14 @@ def play():
 # chooseWord: chooses the word. - must be lower case and not have whitespace
 # a way: create a list and use random.choice() ?
 # should return the word
+import random_word 
 def chooseWord():
-    # TODO: NEEDS TO BE DONE
-    pass
+    #this is the list of possible words
+    words = ["disneyland", "cookies", "blizzard", "lantern", "canyon", "miracle"]
+   #randomly choose one word from list
+    word = random_word.choose(words)
+
+    return word
 
 # guessLetter: validates input and check if the letter guessed is valid; if so, 
 # must be a single alphabetic character
