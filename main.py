@@ -69,7 +69,7 @@ def chooseWord():
     #this is the list of possible words
     words = ["disneyland", "cookies", "blizzard", "lantern", "canyon", "miracle"]
    #randomly choose one word from list
-    word = random_word.choose(words)
+    word = random_word.choice(words)
 
     return word
 
