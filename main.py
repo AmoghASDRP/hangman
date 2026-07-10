@@ -14,6 +14,7 @@ def play():
     progress = []
     used = []
     lives = 6
+    gameWon = False
     for letter in word:
         progress.append("_")
     while lives > 0 and "_" in progress:
@@ -27,14 +28,13 @@ def play():
             continue
 
         if guess == "guess answer":
-            guess = input("Enter the full word: ")
+            guess = input("Enter the full word: ").lower().strip()
             
             if guess == word.lower().strip():
-                print("Word guessed, you've won!")
-                break
+                gameWon = True
             else:
-                print("Answer wrong, game over!")
-                break
+                lives = 0    
+            break
             
             
         else:
@@ -44,17 +44,20 @@ def play():
                 lives -= 1
                 
     if "_" not in progress:
-        print("Word guessed, you've won!")
+        gameWon = True
 
+    if gameWon:
+        print(" ".join(word))
+        print("Word guessed, you've won!")
     else:
         print("Out of lives, game over!")
     
-    replay = input("Play again? (yes/no)").lower().strip()
+    replay = input("Play again? (yes/no)\n").lower().strip()
     while replay != "yes" and replay != "no": 
-        replay = input("Invalid input. Play again? (yes/no)").lower().strip()
+        replay = input("Invalid input. Play again? (yes/no)\n").lower().strip()
     if replay == "yes":
         print("New game!")
-        play()
+        return play()
 
 
 
@@ -90,7 +93,7 @@ def displayUsedLetters(used):
     else:
         # letters will be sorted in alphabetical order
         letters_sort = sorted(list(used))
-        print("Used letters:",", ".join(letters_sort))
+        print("Used letters:", ", ".join(letters_sort))
 
 
 if __name__ == "__main__":
