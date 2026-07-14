@@ -1,8 +1,9 @@
 # main: greets user, calls play() to start game
 def main():
-    # TODO : NEEDS TO BE DONE
-    pass
-
+print("Welcome to Hangman")
+player_name = input("Enter your name: ")
+print("Hello", "player_name")
+play()
 
 # play: the actual game functionality. uses chooseWord(), 
 # guessLetter(), and guessWord() to play the game; also keeps track of lives
