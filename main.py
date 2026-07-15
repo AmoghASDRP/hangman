@@ -82,8 +82,24 @@ def chooseWord():
 # returns True if correct, False otherwise
 
 def guessLetter(guess, word, progress, used):
-    # TODO: NEEDS TO BE DONE
-    pass
+    # Make sure the guess is one letter
+    if len(guess) != 1 or not guess.isalpha():
+        guess = input("Enter one letter: ").lower().strip()
+        return guessLetter(guess, word, progress, used)
+     # Don't allow duplicate guesses
+    if guess in used:
+        guess = input("You already guessed that letter. Try again: ").lower().strip()
+        return guessLetter(guess, word, progress, used)
+    #save the guessed letter 
+    used.append(guess)
+    #check if letter is in word 
+    if guess in word:
+        for i in range(len(word)):
+            if word[i] == guess:
+                progress[i] = guess
+        return True
+
+    return False
 
 
 # displayUsedLetters: displays the letters used in the correct format as per the project 1 PDF
