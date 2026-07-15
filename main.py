@@ -22,7 +22,7 @@ def play():
         # display current progress & lives
         print(" ".join(progress)) 
         print("Lives left:", lives)
-        guess = input("Guess a letter or guess answer: ").lower().strip()
+        guess = input("Guess a letter or type guess answer: ").lower().strip()
 
         if guess == "help":
             displayUsedLetters(used)
