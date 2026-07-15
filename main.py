@@ -84,7 +84,7 @@ def chooseWord():
 def guessLetter(guess, word, progress, used):
     # Make sure the guess is one letter
     if len(guess) != 1 or not guess.isalpha():
-        guess = input("Enter one letter: ").lower().strip()
+        guess = input("Enter only one letter: ").lower().strip()
         return guessLetter(guess, word, progress, used)
      # Don't allow duplicate guesses
     if guess in used:
