@@ -1,6 +1,6 @@
 # main: greets user, calls play() to start game
 def main():
-    print("Welcome to Hangman")
+    print("Let's play Hangman!")
     player_name = input("Enter your name: ")
     print("Hello", player_name)
     play()
@@ -65,12 +65,12 @@ def play():
 # chooseWord: chooses the word. - must be lower case and not have whitespace
 # a way: create a list and use random.choice() ?
 # should return the word
-import random_word 
+import random 
 def chooseWord():
     #this is the list of possible words
     words = ["disneyland", "cookies", "blizzard", "lantern", "canyon", "miracle"]
    #randomly choose one word from list
-    word = random_word.choice(words)
+    word = random.choice(words)
 
     return word
 
