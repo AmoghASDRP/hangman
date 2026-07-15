@@ -3,7 +3,7 @@ def main():
     print("Welcome to Hangman")
     player_name = input("Enter your name: ")
     print("Hello", player_name)
-main()
+play()
 
 # play: the actual game functionality. uses chooseWord(), 
 # guessLetter(), and guessWord() to play the game; also keeps track of lives
