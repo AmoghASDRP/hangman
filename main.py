@@ -1,6 +1,6 @@
 # main: greets user, calls play() to start game
 def main():
-    print("Let's play Hangman!")
+    print("Let's play hangman!")
     player_name = input("Enter your name: ")
     print("Hello", player_name)
     play()
