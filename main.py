@@ -1,3 +1,6 @@
+#Made By: Greg, Amogh, Heejin, Sukruti, Moksha
+
+
 # main: greets user, calls play() to start game
 def main():
     print("Let's play hangman!")
